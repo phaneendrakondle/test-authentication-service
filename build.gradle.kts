@@ -31,6 +31,13 @@ tasks.register<Copy>("unzipNewrelic") {
 }
 
 dependencies {
+    // Force Tomcat version to 9.0.99 to address CVE-2025-24813
+    constraints {
+        implementation("org.apache.tomcat.embed:tomcat-embed-core:9.0.99")
+        implementation("org.apache.tomcat.embed:tomcat-embed-el:9.0.99")
+        implementation("org.apache.tomcat.embed:tomcat-embed-websocket:9.0.99")
+    }
+
     implementation ("commons-fileupload:commons-fileupload:1.3.3")
     implementation ("org.apache.commons:commons-lang3:3.9")
     implementation ("org.apache.commons:commons-collections4:4.4")
