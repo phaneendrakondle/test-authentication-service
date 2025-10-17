@@ -55,6 +55,8 @@ dependencies {
 
     implementation ("commons-net:commons-net:3.6")
 
+    // PostgreSQL JDBC Driver - upgraded to fix CVE-2024-1597
+    implementation ("org.postgresql:postgresql:42.7.4")
 
     testImplementation ("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.8.1")
