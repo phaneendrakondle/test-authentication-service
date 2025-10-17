@@ -55,6 +55,10 @@ dependencies {
 
     implementation ("commons-net:commons-net:3.6")
 
+    // Override vulnerable Tomcat version to fix CVE-2025-24813
+    implementation ("org.apache.tomcat.embed:tomcat-embed-core:9.0.99")
+    implementation ("org.apache.tomcat.embed:tomcat-embed-el:9.0.99")
+    implementation ("org.apache.tomcat.embed:tomcat-embed-websocket:9.0.99")
 
     testImplementation ("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.8.1")
