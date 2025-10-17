@@ -1,0 +1,15 @@
+# Gradle
+.gradle/
+build/
+
+# NewRelic
+newrelic/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
